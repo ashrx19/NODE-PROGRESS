@@ -10,8 +10,8 @@ fs.mkdirSync("./NewFolder",(err)=>{
 
 
 fs.writeFileSync("./NewFolder/NewFile","Hello mf World !!!",(err)=>{
+    console.log(err.message)
     if(err){
-        console.log(err.message)
     }else{
         console.log('File created and written')
     }
